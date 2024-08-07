@@ -32,10 +32,7 @@ def hog(image):
     hog_caract = hog.compute(image)
     return hog_caract.flatten()
 
-hog_caract = []
-for img in images:
-    hog_c = hog(img)
-    hog_caract.append(hog_c)
+hog_caract = [hog(img) for img in images]
 
 '''
     Extração de histograma das imagens 
