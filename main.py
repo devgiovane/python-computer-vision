@@ -13,36 +13,20 @@ def main() -> None:
     # normalize histogram
     images_testing_processed = [functions.process_images(image) for image in images_testing]
     images_training_processed = [functions.process_images(image) for image in images_training]
-    # classifiers with hog
+    # hog extract characteristic
     hog_testing_characteristic = [functions.extraction_hog(image) for image in images_testing_processed]
     hog_training_characteristic = [functions.extraction_hog(image) for image in images_training_processed]
-    classifier.bayes_train(
-        hog_training_characteristic, labels_training,
-        hog_testing_characteristic, labels_testing
-    )
-    classifier.knn_train(
-        hog_training_characteristic, labels_training,
-        hog_testing_characteristic, labels_testing
-    )
-    classifier.svm_train(
-        hog_training_characteristic, labels_training,
-        hog_testing_characteristic, labels_testing
-    )
-    # classifiers with lbp
+    # classifiers with hog
+    classifier.bayes_train(hog_training_characteristic, labels_training, hog_testing_characteristic, labels_testing)
+    classifier.knn_train(hog_training_characteristic, labels_training, hog_testing_characteristic, labels_testing)
+    classifier.svm_train(hog_training_characteristic, labels_training, hog_testing_characteristic, labels_testing)
+    # lbp extract characteristic
     lbp_testing_characteristic = [functions.extraction_lbp(image) for image in images_testing_processed]
     lbp_training_characteristic = [functions.extraction_lbp(image) for image in images_training_processed]
-    classifier.bayes_train(
-        lbp_training_characteristic, labels_training,
-        lbp_testing_characteristic, labels_testing
-    )
-    classifier.knn_train(
-        lbp_training_characteristic, labels_training,
-        lbp_testing_characteristic, labels_testing
-    )
-    classifier.svm_train(
-        lbp_training_characteristic, labels_training,
-        lbp_testing_characteristic, labels_testing
-    )
+    # classifiers with lbp
+    classifier.bayes_train(lbp_training_characteristic, labels_training, lbp_testing_characteristic, labels_testing)
+    classifier.knn_train(lbp_training_characteristic, labels_training, lbp_testing_characteristic, labels_testing)
+    classifier.svm_train(lbp_training_characteristic, labels_training, lbp_testing_characteristic, labels_testing)
 
 
 if __name__ == '__main__':
