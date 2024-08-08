@@ -1,0 +1,142 @@
+# HOG - Without filters
+
+=== Metrics Naive ===
+accuracy_score: 0.6834477498093059
+precision_score: 0.6524426501741896
+recall_score: 0.666374364560639
+f1_score: 0.6518675387518703
+
+=== Confusion Naive ===
+[[177  79   2  42]
+ [ 67 101  65  73]
+ [ 16   9 364  16]
+ [ 22  15   9 254]]
+
+=== Metrics NKK ===
+accuracy_score: 0.9290617848970252
+precision_score: 0.9306106017803727
+recall_score: 0.9253885257806826
+f1_score: 0.9252177610626369
+
+=== Confusion NKK ===
+[[287  12   0   1]
+ [ 14 235  34  23]
+ [  0   3 397   5]
+ [  0   1   0 299]]
+
+=== Metrics SVM ===
+accuracy_score: 0.9672006102212052
+precision_score: 0.9659173993204839
+recall_score: 0.9644281045751634
+f1_score: 0.9649075223144012
+
+=== Confusion SVM ===
+[[275  23   0   2]
+ [  8 290   5   3]
+ [  0   0 405   0]
+ [  0   2   0 298]]
+
+# LBP - Without filters
+
+=== Metrics Naive ===
+accuracy_score: 0.45461479786422576
+precision_score: 0.5094868028597436
+recall_score: 0.48101307189542486
+f1_score: 0.4340824827157281
+=== Confusion Naive ===
+[[173  70   0  57]
+ [ 81 125  21  79]
+ [127 112  63 103]
+ [ 58   7   0 235]]
+
+=== Metrics KNN ===
+accuracy_score: 0.8321891685736079
+precision_score: 0.8227714849922938
+recall_score: 0.8249818445896877
+f1_score: 0.8233397076167709
+=== Confusion KNN ===
+[[226  62   3   9]
+ [ 40 207  34  25]
+ [ 20   9 374   2]
+ [  7   6   3 284]]
+
+=== Metrics SVM ===
+accuracy_score: 0.6414950419527079
+precision_score: 0.6552621557917319
+recall_score: 0.640622730573711
+f1_score: 0.6391266670652114
+=== Confusion SVM ===
+[[165 100   3  32]
+ [ 17 181  59  49]
+ [ 20  51 265  69]
+ [ 24  43   3 230]]
+
+# HOG - With filters
+
+=== Metrics Naive ===
+accuracy_score: 0.6834477498093059
+precision_score: 0.6524426501741896
+recall_score: 0.666374364560639
+f1_score: 0.6518675387518703
+=== Confusion Naive ===
+[[177  79   2  42]
+ [ 67 101  65  73]
+ [ 16   9 364  16]
+ [ 22  15   9 254]]
+
+=== Metrics KNN ===
+accuracy_score: 0.9290617848970252
+precision_score: 0.9306106017803727
+recall_score: 0.9253885257806826
+f1_score: 0.9252177610626369
+=== Confusion KNN ===
+[[287  12   0   1]
+ [ 14 235  34  23]
+ [  0   3 397   5]
+ [  0   1   0 299]]
+
+=== Metrics SVM ===
+accuracy_score: 0.9672006102212052
+precision_score: 0.9659173993204839
+recall_score: 0.9644281045751634
+f1_score: 0.9649075223144012
+=== Confusion SVM ===
+[[275  23   0   2]
+ [  8 290   5   3]
+ [  0   0 405   0]
+ [  0   2   0 298]]
+
+# LBP - With filters
+
+=== Metrics Naive ===
+accuracy_score: 0.45461479786422576
+precision_score: 0.5094868028597436
+recall_score: 0.48101307189542486
+f1_score: 0.4340824827157281
+=== Confusion Naive ===
+[[173  70   0  57]
+ [ 81 125  21  79]
+ [127 112  63 103]
+ [ 58   7   0 235]]
+
+=== Metrics KNN ===
+accuracy_score: 0.8321891685736079
+precision_score: 0.8227714849922938
+recall_score: 0.8249818445896877
+f1_score: 0.8233397076167709
+=== Confusion KNN ===
+[[226  62   3   9]
+ [ 40 207  34  25]
+ [ 20   9 374   2]
+ [  7   6   3 284]]
+
+=== Metrics SVM ===
+accuracy_score: 0.6414950419527079
+precision_score: 0.6552621557917319
+recall_score: 0.640622730573711
+f1_score: 0.6391266670652114
+=== Confusion SVM ===
+[[165 100   3  32]
+ [ 17 181  59  49]
+ [ 20  51 265  69]
+ [ 24  43   3 230]]
