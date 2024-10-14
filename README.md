@@ -80,3 +80,6 @@ Without filters
 | precision_score |  0.6552621557917319 |
 | recall_score    |   0.640622730573711 |
 | f1_score        |  0.6391266670652114 |
+
+### Created by
+© [Giovane Santos](https://giovanesantossilva.github.io), © [Iara Leodoro](https://github.com/yara-leodoro)
